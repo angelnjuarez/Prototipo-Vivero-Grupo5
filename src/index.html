@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin=""/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <title>Vivero Liliam</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Vivero Lilian<span></span></h1>
+            <nav>
+                <ul class="main__nav">
+                    <li class="main__nav-item"><a>Plantas</a></li>
+                    <li class="main__nav-item"><a>Sucursales</a></li>
+                    <li class="main__nav-item"><a>Reserva de pedidos</a></li>
+                    <li class="main__nav-item"><a>Personal vivero</a></li>
+                    <li class="main__nav-item"><a>Acerca de Liliam</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <div id="galery__container" class="galery__container"></div>
+        </section>
+        <section>
+            <div class="map__container">
+                <h2>Encontrá nuestras sucursales</h2>
+                <div id="map"></div>
+            </div>
+        </section>
+        <section>
+            <div class="form__container">
+                <h2>Reservá tu pedido</h2>
+                <form id="pedido" class="pedido">
+                    <label for="name">
+                        <span>Nombre</span>
+                        <input type="text" id="name" class="name" autocomplete="name" placeholder="Nombre y apellido">
+                    </label>
+                    <label for="correo">
+                        <span>Correo</span>
+                        <input type="email" id="correo" class="correo" autocomplete="email" placeholder="ejemplo@correo.com">
+                    </label>
+                    <label for="fecha">
+                        <span>Fecha de retiro</span>
+                        <input type="datetime-local" id="fecha" class="fecha">
+                    </label>
+                    <label for="sucursales">
+                        <span>Sucursal</span>
+                        <input list="sucursales" placeholder="Los Polvorines">
+                        <datalist id="sucursales">
+                            <option value="Los Polvorines">Los Polvorines</option>
+                        </datalist>
+                    </label>
+                    <button id="familia__agregar" class="familia__agregar">Agregar +</button>
+                    <label class="clonar" for="lista__familia">
+                        <span>Planta</span>
+                        <input list="lista__familia" placeholder="Tulipanes">
+                        <datalist id="lista__familia"></datalist>
+                        <span>Cantidad</span>
+                        <input type="number" id="familia-cant" class="familia-cant" placeholder="100">
+                    </label>
+                    <div class='clone__container' id="clone__container"></div>
+                    <input class="form__container-button" type="submit">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__container">
+            <p>Grupo 5: Fernández, Facundo | Juárez, Ángel | Pereyra, Alejandro | Segretin, Romina </p>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+    <script src="./map.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "prototipoviveroliliam",
+  "version": "1.0.0",
+  "description": "Prototipo para la materia de Ingenieria en Software de la Universidad Nacional de General Sarmiento.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "UNGS",
+    "Vivero",
+    "Plantas",
+    "Catalogo"
+  ],
+  "author": "Angel Juarez <angelnjuarez@gmail.com>",
+  "license": "MIT"
+}
