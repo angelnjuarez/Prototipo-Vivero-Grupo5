@@ -23,24 +23,32 @@
                 <span>Código ejemplar</span>
                 <input type="number" placeholder="000001">
             </label>
-            <label for="clase">
-                <span>Clase</span>
-                <input type="text" placeholder="Ejemplo: sin flores">
+            <label for="suelos">
+                <span>Tipo suelo</span>
+                <input list="suelos">
+                <datalist id="suelos">
+                    <option value="Básico"></option>
+                    <option value="Ácido"></option>
+                    <option value="Neutro"></option>
+                </datalist>
             </label>
-            <label for="Fruto">
-                <span>Fruto</span>
-                <input type="text" placeholder="Naranjas">
+            <label for="foto">
+                <span>Edad</span>
+                <input type="text">
+                <span>Foto particular</span>
+                <input type="file" name="imagen">
             </label>
             <label for="cuidados">
                 <span>Cuidados</span>
-                <textarea placeholder="Temperatura, Luz, Suelos, Riegos, etc."></textarea>
-            </label>
-            <label for="foto">
-                <span>Foto referencia</span>
-                <input type="file" name="imagen">
+                <textarea placeholder="Ciclo de riego y temperatura ambiente"></textarea>
             </label>
             <input type="submit">
         </form>
     </section>
+    <footer>
+        <div class="footer__container">
+            <p>Grupo 5: Fernández, Facundo | Juárez, Ángel | Pereyra, Alejandro | Segretin, Romina </p>
+        </div>
+    </footer>
 </body>
 </html>
