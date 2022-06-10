@@ -1,5 +1,5 @@
 /* Cordenadas sucursal */
-let mapa = L.map('map').setView([-34.522700, -58.702193],16);
+let mapa = L.map('map');
 
 /* Mapa, zoom y agregamos coordenadas */
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -18,3 +18,5 @@ let marcadorS = L.marker([-34.53685102047739, -58.70617357375253]).addTo(mapa)
 let marcadorB = L.marker([-34.544158454055435, -58.68765576743836]).addTo(mapa)
                 .bindPopup('Sucursal Bella Vista <br> Pardo 141 <br> Lunes a viernes de 10 a 18 hs.')
                 .openPopup();
+
+mapa.setView([-34.528743399067174, -58.700932949947344],13);
