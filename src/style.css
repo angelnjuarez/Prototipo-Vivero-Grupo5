@@ -52,6 +52,11 @@ nav{
     border-radius: 15px;
 }
 
+.main__nav-item a{
+    text-decoration: none;
+    color: var(--fuente-titulos);
+}
+
 .main__nav-item a:hover{
     color: #AE3203;
 }
