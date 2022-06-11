@@ -8,37 +8,35 @@
     <title>Vivero Lilian</title>
 </head>
 <body>
+    <header>
+        <h1>Vivero Lilian<span></span></h1>
+        <nav>
+            <ul class="main__nav">
+                <li class="main__nav-item"><a href="./consultarClima.html">Consultar clima</a></li>
+                <li class="main__nav-item"><a href="./IngresarFamilia.html">Ingresar Familia</a></li>
+                <li class="main__nav-item"><a href="./ingresarPlanta.html">Ingresar Planta</a></li>
+                <li class="main__nav-item"><a href="./index.html">Catálogo</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <header>
-            <h1>Vivero Lilian<span></span></h1>
-            <nav>
-                <ul class="main__nav">
-                    <li class="main__nav-item"><a href="./consultarClima.html">Consultar clima</a></li>
-                    <li class="main__nav-item"><a href="./IngresarFamilia.html">Ingresar Familia</a></li>
-                    <li class="main__nav-item"><a href="./ingresarPlanta.html">Ingresar Planta</a></li>
-                    <li class="main__nav-item"><a href="./index.html">Catálogo</a></li>
-                </ul>
-            </nav>
-        </header>
         <section class="clima">
-            <div id="container__clima">
+            <div id="container__clima" class="container__clima">
                 <span></span><h2 id="container__clima-temperatura"></h2>
-                <h4 id="container__clima-ubicacion"></h4>
-                <p id="container__clima-parametros"></p>
-                <div class="container__clima-semana">
-                    <h4>Pronóstico semana</h5>
-                    <div class="dias">
-                        <h5>Dom</h5>
-                        <p id="parrafo-dia1"></p>
-                    </div>
-                    <div class="dias">
-                        <h5>Lun</h5>
-                        <p id="parrafo-dia2"></p>
-                    </div>
-                    <div class="dias">
-                        <h5>Mar</h5>
-                        <p id="parrafo-dia3"></p>
-                    </div>
+                <h4 id="container__clima-ubicacion" class="container__clima-ubicacion"></h4>
+                <p id="container__clima-parametros" class="container__clima-parametros"></p>
+                <h4 class="title__clima">Pronóstico semana</h5>
+                <div class="dia-1">
+                    <h5 class="dias">Dom</h5>
+                    <p id="parrafo-dia1" class="parrafo"></p>
+                </div>
+                <div class="dia-2">
+                    <h5 class="dias">Lun</h5>
+                    <p id="parrafo-dia2" class="parrafo"></p>
+                </div>
+                <div class="dia-3">
+                    <h5 class="dias">Mar</h5>
+                    <p id="parrafo-dia3" class="parrafo"></p>
                 </div>
             </div>
         </section>
