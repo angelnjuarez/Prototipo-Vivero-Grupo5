@@ -35,47 +35,17 @@ header span{
     top: 38px;
 }
 
-nav{
-    display: flex;
-    justify-content: center;
-}
-
-.main__nav{
-    margin-top: 40px;
+.container{
     width: 70%;
-    height: 30px;
+    margin: 40px auto 0 auto;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style: none;
-    background-color: var(--verde-lilian);
-    border-radius: 15px;
+    flex-direction: column;
 }
 
-.main__nav-item a{
-    text-decoration: none;
-    color: var(--fuente-titulos);
-}
-
-.main__nav-item a:hover{
-    color: #AE3203;
-}
-
-.main__nav-item a:active{
-    color: var(--background-alternativo);
-}
-
-.main__nav-item{
-    margin: 0 10px;
-    font-size: 1.4rem;
+.container p{
+    font-size: 1.6rem;
     font-weight: 600;
-    align-self: center;
-    color: var(--fuente-titulos);
-    background-color: var(--verde-lilian);
-    cursor: pointer;
 }
-
-
 
 .footer__container{
     margin-top: 40px;

@@ -75,7 +75,12 @@ nav{
     cursor: pointer;
 }
 
-
+.formulario{
+    margin: 40px auto 0 auto;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
 
 .footer__container{
     margin-top: 40px;
