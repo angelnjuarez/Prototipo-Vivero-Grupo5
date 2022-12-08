@@ -1,14 +1,23 @@
 const fetchData = (url_api) => {
+    // Define una nueva promesa
     return new Promise((resolve, reject) => {
+        // Crea un nuevo objeto XMLHttpRequest para realizar la petición
         const xhttp = new XMLHttpRequest();
+        // Configura la petición para usar el método 'GET' y la URL especificada en el parámetro 'url_api'
         xhttp.open('GET', url_api, true);
+        // Define la función a ejecutar cuando cambie el estado de la petición
         xhttp.onreadystatechange = (() => {
+            // Si la petición ha sido completada (readyState === 4)
             if(xhttp.readyState === 4){
+            // Si el servidor respondió con un código de estado '200' (OK)
                 (xhttp.status === 200)
+                // Resuelve la promesa con el texto de la respuesta parseado como un objeto JSON
                 ? resolve(JSON.parse(xhttp.responseText))
+                // Rechaza la promesa con un mensaje de error indicando el URL solicitado
                 : reject(new Error('Error ', url_api))
             }
         });
+        // Envía la petición
         xhttp.send();
     });
 }
